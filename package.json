@@ -4,6 +4,8 @@
   "description": "A resposive and modern landing page designed for coaches and educators to showcase their personal brand, attract clients, and build credibility online.",
   "main": "index.js",
   "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
