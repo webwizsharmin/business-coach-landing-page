@@ -1,0 +1,20 @@
+# Node modules (npm installs)
+node_modules/
+
+# Build output (Tailwind CLI generated CSS, etc.)
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Optional: environment files (if you ever add configs)
+.env
