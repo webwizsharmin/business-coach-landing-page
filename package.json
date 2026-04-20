@@ -1,0 +1,24 @@
+{
+  "name": "business-coach-landing-page",
+  "version": "1.0.0",
+  "description": "A resposive and modern landing page designed for coaches and educators to showcase their personal brand, attract clients, and build credibility online.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webwizsharmin/business-coach-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webwizsharmin/business-coach-landing-page/issues"
+  },
+  "homepage": "https://github.com/webwizsharmin/business-coach-landing-page#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
