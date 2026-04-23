@@ -14,27 +14,117 @@
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Todd Edwards</title>
   </head>
-  <body class="">
+  <body class="font-sans">
     <div
-      style="background-image: url(&quot;./assets/img/cover.jpg&quot;)"
-      class="bg-cover bg-center relative h-1/2"
+      class="bg-cover bg-center relative h-screen bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../assets/img/cover.jpg')] text-white"
     >
-      <nav class="">
-        <a href="#" class="font-sans">Todd Edwards</a>
-        <div class="">
-          <ul class="">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
+      <nav
+        class="flex justify-between items-center place-content-center p-[1rem_2%]"
+      >
+        <!-- Logo -->
+        <a href="#" class="text-2xl sm:text-3xl md:text-4xl font-bold order-1"
+          >Todd <span class="text-brand">Edwards</span></a
+        >
+
+        <!-- Search bar -->
+        <div class="relative flex items-center gap-2 order-2 md:order-3">
+          <!-- Search icon  -->
+          <i
+            class="bx bx-search absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none text-[18px] text-gray-400"
+          ></i>
+
+          <!-- Search input  -->
+          <input
+            type="search"
+            aria-label="Search Site Content"
+            class="w-40 sm:w-56 md:w-64 px-8 py-2 border border-gray-300 rounded-[20px] text-[14px] outline-none focus:shadow-[0_0_10px_#14bbb3]"
+            placeholder="search . . ."
+          />
+
+          <!-- Buttons -->
+          <button
+            class="btn-primary bg-brand hover:bg-transparent transition-colors duration-300 py-1 text-lg font-semibold"
+          >
+            Login
+          </button>
+        </div>
+
+        <div class="order-3 md:order-2">
+          <!-- Burger button -->
+          <button class="md:hidden text-3xl text-white" id="menu-btn">
+            <i class="bx bx-menu hidden" id="menu-icon"></i>
+          </button>
+
+          <!-- Nav Links -->
+          <ul class="hidden md:flex gap-4 text-xl font-semibold" id="menu">
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand transition-colors duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand transition-colors duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand transition-colors duration-300"
+                >Programs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand transition-colors duration-300"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand transition-colors duration-300"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
-        <div>
-          <i class="bx bx-search"></i>
-          <input type="search" placeholder="search . . ." />
-        </div>
       </nav>
+
+      <!-- Hero Content -->
+      <div class="my-18 animate-fadeIn">
+        <div>
+          <h1
+            class="text-3xl sm:text-5xl md:text-7xl font-semibold text-center leading-none"
+          >
+            Scale Your Business With <br />
+            <span class="text-brand">Confidence & Clarity</span>
+          </h1>
+          <p class="text-base sm:text-lg md:text-xl text-center my-4">
+            Executive Coaching & Group programs <br />
+            for Ambitious Entreprenurs
+          </p>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mx-1"
+        >
+          <button
+            class="btn-primary hover:bg-brand transition-colors duration-300"
+          >
+            How it works
+          </button>
+          <button
+            class="bg-brand btn-primary hover:bg-transparent transition-colors duration-300"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
     </div>
     <script src="./js/main.js"></script>
   </body>

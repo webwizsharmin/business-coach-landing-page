@@ -2,4 +2,32 @@
 
 @theme {
   --font-sans: "poppins", sans-serif;
+  --color-brand: #14bbb3;
+}
+
+@layer components {
+  .btn-primary {
+    @apply py-3 px-6 text-xl rounded-4xl ring-2 ring-brand cursor-pointer;
+  }
+
+  .link {
+    @apply hover-brand;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
 }
