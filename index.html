@@ -16,8 +16,9 @@
   </head>
   <body class="font-sans">
     <!-- Hero Section -->
-    <div
+    <section
       class="bg-cover bg-center relative h-screen bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url('../assets/img/cover.jpg')] text-white"
+      id="home"
     >
       <!-- Navigation -->
       <nav
@@ -60,19 +61,19 @@
           <!-- Nav Links -->
           <ul class="hidden md:flex gap-4 text-xl font-semibold" id="menu">
             <li>
-              <a href="#" class="link-effect">Home</a>
+              <a href="#home" class="link-effect">Home</a>
             </li>
             <li>
-              <a href="#" class="link-effect">About</a>
+              <a href="#about" class="link-effect">About</a>
             </li>
             <li>
-              <a href="#" class="link-effect">Programs</a>
+              <a href="#testimonials" class="link-effect">Testimonials</a>
             </li>
             <li>
-              <a href="#" class="link-effect">Testimonials</a>
+              <a href="#programs" class="link-effect">Programs</a>
             </li>
             <li>
-              <a href="#" class="link-effect">Contact</a>
+              <a href="#contact" class="link-effect">Contact</a>
             </li>
           </ul>
         </div>
@@ -107,10 +108,10 @@
           </button>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <section class="px-6 py-12">
+    <section class="px-6 py-12" id="about">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
         Meet
         <span class="text-brand underline-accent">Todd Edwards </span>
@@ -153,7 +154,7 @@
     </section>
 
     <!-- Testimonials sections -->
-    <section class="px-6 py-12 bg-gray-100">
+    <section class="px-6 py-12 bg-gray-100" id="testimonials">
       <!-- Heading  -->
       <div class="mb-10">
         <h2 class="text-2xl md:text-4xl font-bold text-center mb-6">
@@ -356,7 +357,8 @@
       </div>
     </section>
 
-    <section class="px-6 py-10">
+    <!-- Programs -->
+    <section class="px-6 py-10" id="programs">
       <div class="text-center mb-8">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
           Coaching
@@ -450,7 +452,7 @@
     </section>
 
     <!-- contact -->
-    <section class="px-6 py-16 bg-gray-100">
+    <section class="px-6 py-16 bg-gray-100" id="contact">
       <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <!-- Visual / Accent -->
         <div
@@ -500,7 +502,7 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 py-10 text-white">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-6">
         <!-- Brand + Tagline -->
         <div>
           <a href="#" class="text-2xl sm:text-3xl md:text-4xl font-bold"
