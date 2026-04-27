@@ -3,6 +3,8 @@
 @theme {
   --font-sans: "poppins", sans-serif;
   --color-brand: #14bbb3;
+  --grid-template-columns-layout: 200px 1fr 200px;
+  --grid-template-columns-sidebar: minmax(150px, 1fr) 3fr;
 }
 
 @layer components {
