@@ -2,7 +2,7 @@
 node_modules/
 
 # Build output (Tailwind CLI generated CSS, etc.)
-dist/
+
 build/
 
 # Logs
